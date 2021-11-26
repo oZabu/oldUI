@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="private.css">
+    <title>OldUI</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div>Windows95UI</div>
+        <div id="a_button">
+            <button id="minusButton" class="all_button">_</button>
+            <button id="squareButton" class="all_button">□</button>
+            <button id="xButton" class="all_button">×</button>
+        </div>
+    </header>
+
+    <h3 id="time-display">取得中...</h3>
+
+
+    <div id="flex1">
+        <div id="dayList">
+            <details>
+                <summary>
+                    <strong>時間割</strong>
+                </summary>
+                <h6 id="hint">授業中は赤、昼休みは緑、振り返り時間はオレンジ、終礼は黄色になります。</h6>
+                <ul>
+                    <p>1限目　9:45-10:35</p>
+                    <p>2限目　10:45-11:35</p>
+                    <p>3限目　11:45-12:35</p>
+                    <p>昼休　12:35-13:15</p>
+                    <p>4限目　13:15-14:05</p>
+                    <p>5限目　14:15-15:05</p>
+                    <p>6限目　15:15-16:05</p>
+                    <p>放課後  16:15-17:30　</p>
+                </ul>
+            </details>
+        </div>
+        <div id="movie_display">
+            <div id="movie_header">
+                <div>Music</div>
+                <div>
+                    <button id="MminusButton" class="all_button">_</button>
+                    <button id="MsquareButton" class="all_button">□</button>
+                    <button id="MxButton" class="all_button">×</button>
+                </div>
+            </div>
+            <!-- 動画変える時[ id="movie" ]つけるの忘れないように -->
+            <iframe id="movie" width="560" height="315" src="https://www.youtube.com/embed/7F_un08wc5A"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <!-- 動画 -->
+        </div>
+    </div>
+    <div id="input_text">
+    </div>
+    <script src="private.js"></script>
+</body>
+
+</html>
