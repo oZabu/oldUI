@@ -38,6 +38,8 @@ function timer() {
         displayTime.style.color = "orange";
     } else if (_date >= 1605 && _date < 1615) {
         displayTime.style.color = "yellow";
+    } else {
+        displayTime.style.color = "white";
     };
 
 };
