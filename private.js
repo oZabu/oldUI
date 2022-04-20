@@ -14,84 +14,58 @@ function timer() {
     var nowMin = nowM.slice(-2);
     var nowSec = nowS.slice(-2);
 
-    var msg = nowMon + "月" + nowDay + "日" + "(" + dayOfWeek + ")" + " " + nowHour + ":" + nowMin + ":" + nowSec;　//表示する時間(時間+分)
+    var msg = nowMon + "/" + nowDay + "(" + dayOfWeek + ")" + " " + nowHour + ":" + nowMin + ":" + nowSec;　//表示する時間(時間+分)
     document.getElementById("time-display").innerHTML = msg; //時間を表示させる
 
 
     var _date = nowHour + nowMin;
     var displayTime = document.getElementById("time-display");
-    var alarm = new Audio('Alarm.mp3');
+    var countDownH = ".";
+    var countdownM = ".";
     if (_date >= 945 && _date < 1035) {
         displayTime.style.color = "red";
-        alarm.play();
-        window.setTimeout(function(){
-        alarm.pause();
-        alarm.currentTime = 0;
-        }, 1000);
+        var countDownH = 10 - nowHour;
+        var countdownM = 35 - nowMin;
     } else if (_date >= 1045 && _date < 1135) {
         displayTime.style.color = "red";
-        alarm.play();
-        window.setTimeout(function(){
-        alarm.pause();
-        alarm.currentTime = 0;
-        }, 1000);
+        var countDownH = 11 - nowHour;
+        var countdownM = 35 - nowMin;
     } else if (_date >= 1145 && _date < 1235) {
         displayTime.style.color = "red";
-        alarm.play();
-        window.setTimeout(function(){
-        alarm.pause();
-        alarm.currentTime = 0;
-        }, 1000);
+        var countDownH = 12 - nowHour;
+        var countdownM = 35 - nowMin;
     } else if (_date >= 1235 && _date < 1315) {
         displayTime.style.color = "green";
-        alarm.play();
-        window.setTimeout(function(){
-        alarm.pause();
-        alarm.currentTime = 0;
-        }, 1000);
+        var countDownH = 13 - nowHour;
+        var countdownM = 15 - nowMin;
     } else if (_date >= 1315 && _date < 1405) {
         displayTime.style.color = "red";
-        alarm.play();
-        window.setTimeout(function(){
-        alarm.pause();
-        alarm.currentTime = 0;
-        }, 1000);
+        var countDownH = 14 - nowHour;
+        var countdownM = 05 - nowMin;
     } else if (_date >= 1415 && _date < 1505) {
         displayTime.style.color = "red";
-        alarm.play();
-        window.setTimeout(function(){
-        alarm.pause();
-        alarm.currentTime = 0;
-        }, 1000);
+        var countDownH = 15 - nowHour;
+        var countdownM = 05 - nowMin;
     } else if (_date >= 1515 && _date < 1600) {
         displayTime.style.color = "red";
-        alarm.play();
-        window.setTimeout(function(){
-        alarm.pause();
-        alarm.currentTime = 0;
-        }, 1000);
+        var countDownH = 16 - nowHour;
+        var countdownM = 00 - nowMin;
     } else if (_date >= 1600 && _date < 1605) {
         displayTime.style.color = "orange";
-        alarm.play();
-        window.setTimeout(function(){
-        alarm.pause();
-        alarm.currentTime = 0;
-        }, 1000);
+        var countDownH = 16 - nowHour;
+        var countdownM = 05 - nowMin;
     } else if (_date >= 1605 && _date < 1615) {
         displayTime.style.color = "yellow";
-        alarm.play();
-        window.setTimeout(function(){
-        alarm.pause();
-        alarm.currentTime = 0;
-        }, 1000);
+        var countDownH = 16 - nowHour;
+        var countdownM = 15 - nowMin;
     } else {
         displayTime.style.color = "white";
-        alarm.play();
-        window.setTimeout(function(){
-        alarm.pause();
-        alarm.currentTime = 0;
-        }, 1000);
+        var countDownH = "..";
+        var countdownM = "..";
     };
+
+    document.getElementById("timer-time").innerHTML = "あと" + countDownH + "時間" + countdownM + "分";
+
 
 };
 var movieWindow = document.getElementById("movie_display");
