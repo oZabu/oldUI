@@ -22,49 +22,60 @@ function timer() {
     var displayTime = document.getElementById("time-display");
     var countDownH = ".";
     var countdownM = ".";
+    var period = "放課後";
     if (_date >= 945 && _date < 1035) {
         displayTime.style.color = "red";
         var countDownH = 10 - nowHour;
         var countdownM = 35 - nowMin;
+        var period = "1限目";
     } else if (_date >= 1045 && _date < 1135) {
         displayTime.style.color = "red";
         var countDownH = 11 - nowHour;
         var countdownM = 35 - nowMin;
+        var period = "2限目";
     } else if (_date >= 1145 && _date < 1235) {
         displayTime.style.color = "red";
         var countDownH = 12 - nowHour;
         var countdownM = 35 - nowMin;
+        var period = "3限目";
     } else if (_date >= 1235 && _date < 1315) {
         displayTime.style.color = "green";
         var countDownH = 13 - nowHour;
         var countdownM = 15 - nowMin;
+        var period = "昼休み";
     } else if (_date >= 1315 && _date < 1405) {
         displayTime.style.color = "red";
         var countDownH = 14 - nowHour;
         var countdownM = 05 - nowMin;
+        var period = "4限目";
     } else if (_date >= 1415 && _date < 1505) {
         displayTime.style.color = "red";
         var countDownH = 15 - nowHour;
         var countdownM = 05 - nowMin;
+        var period = "5限目";
     } else if (_date >= 1515 && _date < 1600) {
         displayTime.style.color = "red";
         var countDownH = 16 - nowHour;
         var countdownM = 00 - nowMin;
+        var period = "6限目";
     } else if (_date >= 1600 && _date < 1605) {
         displayTime.style.color = "orange";
         var countDownH = 16 - nowHour;
         var countdownM = 05 - nowMin;
+        var period = "6限目";
     } else if (_date >= 1605 && _date < 1615) {
         displayTime.style.color = "yellow";
         var countDownH = 16 - nowHour;
         var countdownM = 15 - nowMin;
+        var period = "終礼";
     } else {
         displayTime.style.color = "white";
         var countDownH = "..";
         var countdownM = "..";
+        var period = "放課後";
     };
 
-    document.getElementById("timer-time").innerHTML = "あと" + countDownH + "時間" + countdownM + "分";
+    document.getElementById("timer-time").innerHTML = period;
 
 
 };
