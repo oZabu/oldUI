@@ -1,16 +1,18 @@
 @font-face {
-	font-family: 'MyFont';
-	src: url(PixelMplus12-Regular.ttf);
+    font-family: 'MyFont';
+    src: url(PixelMplus12-Regular.ttf);
 }
-body{
+
+body {
     margin: 0;
     background-color: rgb(192, 192, 192);
-    border:solid 4px;
+    border: solid 4px;
     border-color: rgb(225, 225, 225) rgb(34, 34, 34) rgb(34, 34, 34) rgb(225, 225, 225);
     font-family: 'MyFont';
-    
+
 }
-header{
+
+header {
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
@@ -19,89 +21,122 @@ header{
     justify-content: space-between;
     background: rgb(128, 128, 128);
     font-size: 30px;
-    color: rgb(190,190,190);
+    color: rgb(190, 190, 190);
 }
-.all_button{
+
+.all_button {
     width: 30px;
     height: 30px;
     border-radius: 0px;
     background: rgb(192, 192, 192);
-    border:solid 2px;
+    border: solid 2px;
     border-color: rgb(225, 225, 225) rgb(34, 34, 34) rgb(34, 34, 34) rgb(225, 225, 225);
     font-family: 'MyFont';
     font-size: 15px;
 }
-.all_button:active{
+
+.all_button:active {
     border-color: rgb(34, 34, 34) rgb(225, 225, 225) rgb(225, 225, 225) rgb(34, 34, 34);
 }
-#xButton{
+
+#xButton {
     margin-right: 10px;
 }
-#dayList{
+
+#dayList {
     padding: 10px;
     width: 250px;
 }
-details{
+
+details {
     padding: 10px;
     background-color: rgb(192, 192, 192);
-    border:solid 4px;
+    border: solid 4px;
     border-color: rgb(225, 225, 225) rgb(34, 34, 34) rgb(34, 34, 34) rgb(225, 225, 225);
 }
-#time-display{
+
+#whatch {
+    display: flex;
+}
+
+#timer-time {
+    margin: 0;
+    padding: 0;
+    margin: 10px;
+    padding: 0;
+    width: 100px;
+    height: auto;
+    background: black;
+    color: white;
+    border: solid 4px;
+    border-color: rgb(34, 34, 34) rgb(225, 225, 225) rgb(225, 225, 225) rgb(34, 34, 34);
+    text-align: center;
+
+}
+
+#time-display {
     margin: 0;
     padding: 20px;
 
 }
-#flex1{
+
+#flex1 {
     display: flex;
     justify-content: space-between;
 }
-#movie_display{
+
+#movie_display {
     margin: 10px;
     width: 588px;
-    height:0%;
+    height: 0%;
     background-color: rgb(192, 192, 192);
-    border:solid 4px;
+    border: solid 4px;
     border-color: rgb(225, 225, 225) rgb(34, 34, 34) rgb(34, 34, 34) rgb(225, 225, 225);
     display: none;
 }
-#movie{
+
+#movie {
     margin: 10px;
-    border:solid 4px;
+    border: solid 4px;
     border-color: rgb(34, 34, 34) rgb(225, 225, 225) rgb(225, 225, 225) rgb(34, 34, 34);
 }
-#time-display{
+
+#time-display {
     margin: 10px;
     padding: 0;
     width: 250px;
     height: auto;
     background: black;
     color: white;
-    border:solid 4px;
+    border: solid 4px;
     border-color: rgb(34, 34, 34) rgb(225, 225, 225) rgb(225, 225, 225) rgb(34, 34, 34);
     text-align: center;
 }
-#text{
+
+#text {
     margin: 10px;
-    border:solid 4px;
+    border: solid 4px;
     border-color: rgb(34, 34, 34) rgb(225, 225, 225) rgb(225, 225, 225) rgb(34, 34, 34);
     font-family: "MyFont";
 }
-#movie_header{
+
+#movie_header {
     margin: 0;
     padding: 5px;
     display: flex;
     justify-content: space-between;
     background: rgb(128, 128, 128);
     font-size: 30px;
-    color: rgb(190,190,190);
+    color: rgb(190, 190, 190);
 }
-#hint{
+
+#hint {
     margin: 10px;
     margin-top: 0;
 }
-#url{
+
+#url {
     padding: 10px;
     width: 250px;
-    
+
 }
