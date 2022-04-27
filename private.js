@@ -22,7 +22,7 @@ function timer() {
     var displayTime = document.getElementById("time-display");
     var countDownH = ".";
     var countdownM = ".";
-    var period = "放課後";
+    var period = "休み時間";
     if (_date >= 945 && _date < 1035) {
         displayTime.style.color = "red";
         var countDownH = 10 - nowHour;
@@ -72,7 +72,7 @@ function timer() {
         displayTime.style.color = "white";
         var countDownH = "..";
         var countdownM = "..";
-        var period = "放課後";
+        var period = "休み時間";
     };
 
     document.getElementById("timer-time").innerHTML = period;
