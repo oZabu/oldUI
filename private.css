@@ -74,6 +74,21 @@ details {
 
 }
 
+#RealtimeCountdownArea {
+    margin: 0;
+    padding: 0;
+    margin: 10px;
+    padding: 0;
+    width: 310px;
+    height: auto;
+    background: black;
+    color: white;
+    border: solid 4px;
+    border-color: rgb(34, 34, 34) rgb(225, 225, 225) rgb(225, 225, 225) rgb(34, 34, 34);
+    text-align: center;
+
+}
+
 #time-display {
     margin: 0;
     padding: 20px;
